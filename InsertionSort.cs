@@ -1,39 +1,55 @@
-public static class sort
-{
-    public void InsertionSort(int[] arr)
+using System;
+
+namespace SortingAlgorithms
+{    public static class sort
     {
-        for (int i = 1; i < arr.Count(); i++)
+        public static void InsertionSort(int[] arr)
         {
-            int key = arr[i];
-            int j = i-1;
-            while (j >= 0 && arr[j+1] > arr[j])
+            for (int i = 1; i < arr.Length; i++)
             {
-                arr[j+1] = arr[j];
-                j = j - 1;
+                int key = arr[i];
+                int j = i-1;
+                while (j >= 0 && arr[j] < key)
+                {
+                    arr[j+1] = arr[j];
+                    j = j - 1;
+                }
+                arr[j+1] = key;
             }
-            arr[j] = key;
         }
-    }
 
-    public void TestInsertionSort()
-    {
-        // array to check
-        int[] arr1 = new int[]{1,2,3,4,5,6};
-        // array when sorted to test against
-        int[] arr2 = new int[]{6,5,4,3,2,1};
-        Console.WriteLine("Test1: " DoArraysMatch(arr1, arr2));
-        //Console.in
-    }
-
-    private bool DoArraysMatch(int[] arr1, int[] arr2)
-    {
-        if (arr1.Count() != arr2.Count())
-            return false;
-        for (int i = 0; i < arr1.Count(); i++)
+        public static void TestInsertionSort()
         {
-            if (arr1[i] != arr2[i])
-                return false;
+            // array to check
+            int[] arr1 = new int[]{1,2,3,4,5,6};
+            // array when sorted to test against
+            int[] arr2 = new int[]{6,5,4,3,2,1};
+            Console.WriteLine("Test1 (should return false): " + DoArraysMatch(arr1, arr2));
+            InsertionSort(arr1);            
+            Console.WriteLine("Test1 (should return true): " + DoArraysMatch(arr1, arr2));
+            PrintArray(arr1);
         }
-        return true;
+
+        private static bool DoArraysMatch(int[] arr1, int[] arr2)
+        {
+            if (arr1.Length != arr2.Length)
+                return false;
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                if (arr1[i] != arr2[i])
+                    return false;
+            }
+            return true;
+        }
+        
+        private static void PrintArray(int[] arr)
+        {
+            Console.Write("Array:{" + arr[0]);
+            for (int i = 1; i < arr.Length; i++)
+            {
+                Console.Write(", " + arr[i]);
+            }
+            Console.Write("}\n");
+        }
     }
 }

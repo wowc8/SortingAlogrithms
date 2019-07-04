@@ -1,0 +1,11 @@
+C:\Repository\SortingAlgorithms\obj\Debug\netcoreapp2.2\SortingAlgorithms.csprojAssemblyReference.cache
+C:\Repository\SortingAlgorithms\obj\Debug\netcoreapp2.2\SortingAlgorithms.csproj.CoreCompileInputs.cache
+C:\Repository\SortingAlgorithms\obj\Debug\netcoreapp2.2\SortingAlgorithms.AssemblyInfoInputs.cache
+C:\Repository\SortingAlgorithms\obj\Debug\netcoreapp2.2\SortingAlgorithms.AssemblyInfo.cs
+C:\Repository\SortingAlgorithms\bin\Debug\netcoreapp2.2\SortingAlgorithms.deps.json
+C:\Repository\SortingAlgorithms\bin\Debug\netcoreapp2.2\SortingAlgorithms.runtimeconfig.json
+C:\Repository\SortingAlgorithms\bin\Debug\netcoreapp2.2\SortingAlgorithms.runtimeconfig.dev.json
+C:\Repository\SortingAlgorithms\bin\Debug\netcoreapp2.2\SortingAlgorithms.dll
+C:\Repository\SortingAlgorithms\bin\Debug\netcoreapp2.2\SortingAlgorithms.pdb
+C:\Repository\SortingAlgorithms\obj\Debug\netcoreapp2.2\SortingAlgorithms.dll
+C:\Repository\SortingAlgorithms\obj\Debug\netcoreapp2.2\SortingAlgorithms.pdb

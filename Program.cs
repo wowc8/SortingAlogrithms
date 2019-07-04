@@ -7,7 +7,7 @@ namespace SortingAlgorithms
         static void Main(string[] args)
         {
             Console.WriteLine("Testing Insertions Sort");
-            sort.TestInsertionSort();
+            InsertionSort.TestSort();
         }
     }
 }

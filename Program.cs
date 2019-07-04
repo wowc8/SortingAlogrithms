@@ -6,8 +6,10 @@ namespace SortingAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Testing Insertions Sort");
-            InsertionSort.TestSort();
+            TestSort tester = new TestSort();
+            tester.AddASort(new InsertionSort());
+            tester.AddASort(new MergeSort());
+            tester.TestSorts();
         }
     }
 }

@@ -24,5 +24,10 @@ namespace SortingAlgorithms
             }
             Console.Write("}\n");
         }
+        public static int ExtractDigit(int num, int digit)
+        {
+            int result = (int)Math.Floor(num/(Math.Pow(10, digit-1))) % 10;
+            return result;
+        }
     }
 }

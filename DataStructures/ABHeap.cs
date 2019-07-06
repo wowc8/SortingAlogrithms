@@ -1,4 +1,4 @@
-namespace SortingAlgorithms
+namespace Algorithms
 {
     public abstract class ABHeap
     {        

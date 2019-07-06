@@ -1,9 +1,22 @@
 using System;
 
-namespace SortingAlgorithms
+namespace Algorithms
 {
     public class RadixSort : ISortingAlgorithm
     {
+        public int numberOfTests { get; set; }
+        public bool allowsDecimals { get; set; }
+        public bool useRandomGeneratedTesting { get; set; }
+        public int FromRandomRange { get; set; }
+        public int ToRandomRange { get; set; }
+        public RadixSort()
+        {            
+            numberOfTests = 0;
+            allowsDecimals = false;
+            useRandomGeneratedTesting = false;
+            FromRandomRange = 0;
+            ToRandomRange = 0;
+        }
         public string GetSortName()
         {
             return "Radix Sort";
@@ -22,6 +35,10 @@ namespace SortingAlgorithms
             string strmaxvalue = maxvalue.ToString();
             int numdigits = strmaxvalue.Length;
             arr = Sort(arr, numdigits);
+            return arr;
+        }
+        public double[] Sort(double[] arr)
+        {
             return arr;
         }
         public int[] Sort(int[] arr, int numDigits)

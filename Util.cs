@@ -1,6 +1,6 @@
 using System;
 
-namespace SortingAlgorithms
+namespace Algorithms
 {
     public class Util    {
          public static bool DoArraysMatch(int[] arr1, int[] arr2)
@@ -14,9 +14,13 @@ namespace SortingAlgorithms
             }
             return true;
         }
-
-        public static void PrintArray(int[] arr)
+        public static void PrintArray<T>(T[] arr)
         {
+            if (arr.Length < 1)
+            {
+                Console.Write("Array:{}\n");
+                return;
+            }
             Console.Write("Array:{" + arr[0]);
             for (int i = 1; i < arr.Length; i++)
             {

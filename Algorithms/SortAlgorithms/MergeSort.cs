@@ -1,7 +1,21 @@
-namespace SortingAlgorithms
+namespace Algorithms
 {
     public class MergeSort : ISortingAlgorithm
     {
+        public int numberOfTests { get; set; }
+        public bool allowsDecimals { get; set; }
+        public bool useRandomGeneratedTesting { get; set; }
+        public int FromRandomRange { get; set; }
+        public int ToRandomRange { get; set; }
+
+        public MergeSort()
+        {       
+            numberOfTests = 1000;
+            allowsDecimals = false;     
+            useRandomGeneratedTesting = true;
+            FromRandomRange = -9999;
+            ToRandomRange = 999999;
+        }
         public string GetSortName()
         {
             return "Merge Sort";
@@ -20,6 +34,10 @@ namespace SortingAlgorithms
                 Sort(arr,m+1,r);
                 Merge(arr,l,m,r);
             }
+            return arr;
+        }
+        public double[] Sort(double[] arr)
+        {
             return arr;
         }
 

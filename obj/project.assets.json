@@ -692,9 +692,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repository\\SortingAlgorithms\\SortingAlgorithms.csproj",
-      "projectName": "SortingAlgorithms",
-      "projectPath": "C:\\Repository\\SortingAlgorithms\\SortingAlgorithms.csproj",
+      "projectUniqueName": "C:\\Repository\\SortingAlgorithms\\Algorithms.csproj",
+      "projectName": "Algorithms",
+      "projectPath": "C:\\Repository\\SortingAlgorithms\\Algorithms.csproj",
       "packagesPath": "C:\\Users\\colem\\.nuget\\packages\\",
       "outputPath": "C:\\Repository\\SortingAlgorithms\\obj\\",
       "projectStyle": "PackageReference",

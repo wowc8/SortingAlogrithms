@@ -1,8 +1,20 @@
-namespace SortingAlgorithms
+namespace Algorithms
 {
     public class QuickSort : ISortingAlgorithm
     {
-        
+        public int numberOfTests { get; set; }
+        public bool allowsDecimals { get; set; }        
+        public bool useRandomGeneratedTesting { get; set; }
+        public int FromRandomRange { get; set; }
+        public int ToRandomRange { get; set; }
+        public QuickSort()
+        {           
+            numberOfTests = 0;
+            allowsDecimals = false; 
+            useRandomGeneratedTesting = false;
+            FromRandomRange = 0;
+            ToRandomRange = 0;
+        }
         public string GetSortName()
         {
             return "Quick Sort";
@@ -10,6 +22,10 @@ namespace SortingAlgorithms
         public int[] Sort(int[] arr)
         {            
             Sort(arr, 0, arr.Length-1);
+            return arr;
+        }
+        public double[] Sort(double[] arr)
+        {
             return arr;
         }
 

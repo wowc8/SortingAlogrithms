@@ -6,7 +6,8 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            TestSelect();
+            msscreen.run();
+            //TestSelect();
         }
 
         public static void TestSelect()
